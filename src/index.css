@@ -1,0 +1,40 @@
+body {
+  background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); /* Degradado suave con tonos pastel */
+  color: #333;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #4a4e69; /* Gris oscuro suave */
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+}
+
+p {
+  font-size: 5rem;
+  color: #22223b; /* Azul oscuro elegante */
+  font-weight: 600;
+  text-shadow: 4px 4px 15px rgba(34, 34, 59, 0.4); /* Sombra para profundidad */
+  border-radius: 15px; /* Bordes redondeados */
+  padding: 15px 30px; /* Espaciado interno */
+  background-color: rgba(255, 255, 255, 0.3); /* Fondo semitransparente */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Sombra externa para dar relieve */
+  animation: glow 1.8s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 4px 4px 15px rgba(34, 34, 59, 0.4);
+  }
+  to {
+    text-shadow: 4px 4px 30px rgba(34, 34, 59, 0.7);
+  }
+}

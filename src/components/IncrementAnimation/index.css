@@ -1,0 +1,26 @@
+.increment {
+  position: absolute;
+  top: 50%; /* Ajusta según la posición deseada */
+  left: 50%;
+  transform: translate(-50%, -150%); /* Centrado y desplazado un poco arriba */
+  font-size: 2rem;
+  color: #ff6347; /* Rojo suave */
+  opacity: 0;
+  animation: floatUp 1s ease-out forwards;
+  pointer-events: none; /* Para que no interfiera con el cursor */
+}
+
+.visible {
+  opacity: 1;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -100%);
+    opacity: 0;
+  }
+}

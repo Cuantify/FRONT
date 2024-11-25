@@ -1,0 +1,16 @@
+.App-header {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+p {
+  transition: transform 0.3s ease-in-out;
+}
+
+p:hover {
+  transform: scale(1.05); /* Efecto de escala suave */
+}
